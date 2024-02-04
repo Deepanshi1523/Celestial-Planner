@@ -14,7 +14,7 @@ app.post('/api/make-curl-request', async (req, res) => {
     console.log(planetName);
     const curlRequestData = {
       method: 'POST',
-      url: 'https://api.getknit.ai/v1/router/run', // Example API endpoint
+      url: 'https://api.getknit.ai/v1/router/run', 
       headers: {
         'x-auth-token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiMTAxMjU5NDM2Nzg2MjkxMDM5MDMwIn0sImlhdCI6MTcwNzAwNTkwNywiZXhwIjoxNzA4MDg1OTA3fQ.ZKfiYfkiOmcjF9Yi2MGl31R45Aiq7_HbCXsDkCY4QTI',
         'Content-Type': 'application/json',
