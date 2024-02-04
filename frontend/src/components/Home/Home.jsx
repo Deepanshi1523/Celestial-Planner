@@ -13,7 +13,7 @@ function Home() {
         <img src={Earth} className="earthGif"/>
         <img src={Rocket} className="rocketGif"/>
         <img src={Alien} className="alienGif"/>
-        <h1 className="home-header">Plan your celestial trip</h1>
+        <h1 className="home-header">STARRY ESCAPE 🌌 ✨🚀</h1>
         <TripForm/>
     </div>
   );

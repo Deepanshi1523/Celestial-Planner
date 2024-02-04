@@ -42,6 +42,7 @@ const TripForm = () => {
             Celestial Body:
             <input
               type="text"
+              placeholder='Your celestial destination'
               name="celestialBody"
               value={planetName}
               onChange={(e) => setPlanetName(e.target.value)}
@@ -51,6 +52,7 @@ const TripForm = () => {
             Number of Days:
             <input
               type="number"
+              placeholder='Duration'
               name="numberOfDays"
               value={numberOfDays}
               onChange={(e) => {

@@ -1,0 +1,9 @@
+.output-div{
+  padding: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.output-text{
+  white-space: pre-line;
+}
