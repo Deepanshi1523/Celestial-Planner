@@ -2,18 +2,19 @@ import React, { useState } from 'react';
 import './TripFormModule.css'; // Create a CSS file for styling
 import axios from 'axios';
 import FormattedResponse from './formattedResponse';
+import CycleAlien from "./cycleAlien.gif";
+// import Loading from "./loader.gif";
 
 const TripForm = () => {
-  const [showOutput, setShowOutput] = useState(false);
-  const [outputData, setOutputData] = useState('');
   const [apiResponse, setApiResponse] = useState('');
-
   const [planetName, setPlanetName] = useState('');
   const [numberOfDays, setNumberOfDays] = useState('');
+  const [loading,setLoading]=useState(false);
 
 
   const makeCurlRequest = async () => {
     try {
+      setLoading(true);
       const response = await axios.post('http://localhost:5000/api/make-curl-request', {
         planetName,
         numberOfDays,
@@ -21,6 +22,9 @@ const TripForm = () => {
       setApiResponse(JSON.stringify(response.data.responseText, null, 2));
     } catch (error) {
       console.error(error);
+    }
+    finally{
+      setLoading(false);
     }
   };
   
@@ -64,7 +68,7 @@ const TripForm = () => {
           <button type="submit">Submit</button>
         </form>
       <div className='responseDiv'>
-        {apiResponse && <FormattedResponse apiResponse={apiResponse} />}
+        {loading?(<div className='loader'><img src={CycleAlien} className='loader-img'/></div>):(apiResponse && <FormattedResponse apiResponse={apiResponse} />)}
       </div>
     </div>
   );
