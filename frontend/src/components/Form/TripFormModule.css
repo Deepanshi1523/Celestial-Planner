@@ -1,0 +1,49 @@
+.trip-form-container {
+  max-width: 400px;
+  margin-top: 50px !important;
+  margin: auto;
+  color: white;
+  z-index: 2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 30px !important;
+  font-size: 17px !important;
+}
+
+input {
+  padding: 5px;
+  margin-top: 5px;
+  color: white;
+  width: 50%;
+  height: 30%;
+  margin-left: 10px !important;
+  border: 3px solid beige ;
+  border-radius: 10px;
+  padding: 10px !important;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  width: 30%;
+  border: none;
+  border-radius: 5% !important;
+  /* margin-top: 10px !important; */
+}
+
+p {
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+}
