@@ -26,17 +26,19 @@
   height: 35%;
   position: absolute;
   margin-right: -78vw;
-  margin-top: -20vh;
+  margin-top: -45vh;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .rocketGif{
   z-index: 2;
   position: absolute;
   margin-left: 78vw;
-  margin-top: 85vh;
+  margin-top: 50vh;
   width: 20%;
   height: 50%;
-  background-size: cover
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .alienGif{
@@ -44,6 +46,7 @@
   position: absolute;
   width: 30%;
   height: 80%;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-right: 70%;
+  background-color: rgba(255, 255, 255, 0);
 }
