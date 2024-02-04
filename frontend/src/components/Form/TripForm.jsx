@@ -15,7 +15,7 @@ const TripForm = () => {
   const makeCurlRequest = async () => {
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/make-curl-request', {
+      const response = await axios.post('https://celestial-backend.onrender/api/make-curl-request', {
         planetName,
         numberOfDays,
       });
