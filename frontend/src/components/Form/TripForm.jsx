@@ -49,7 +49,6 @@ const TripForm = () => {
         {planetName && numberOfDays && (
         <div className="output-box">
           <p>Creating your celestial trip to {planetName}</p>
-          {showOutput && <p>{outputData}</p>}
         </div>
       )}
       {apiResponse && <pre>{apiResponse}</pre>}
